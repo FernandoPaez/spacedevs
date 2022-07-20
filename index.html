@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Devs</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div id="sidemenu" class="menu-collapsed">
+        <div id="header">
+            <div id="title"><span>Administrar</span></div>
+            <div id="menu-btn">
+
+                <button class="btn-hamburger"></button>
+                <button class="btn-hamburger"></button>
+                <button class="btn-hamburger"></button>
+
+
+            </div>
+        </div>
+
+        <!-- Pofile -->
+        <div id="profile">
+            <div id="photo"><img src="img/logoSpaceDevs.png" alt=""></div>
+            <div id="name"><span>SpaceDevs</span></div>
+        </div>
+
+        <!-- Items -->
+
+        <div id="menu-items">
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="img/tres.jpg" alt=""></div>
+                    <div class="title"><span>Cloud Service</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="img/cinco.jpg" alt=""></div>
+                    <div class="title">Cloud Service</div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="img/cuatro.jpg" alt=""></div>
+                    <div class="title">Cloud Service</div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="img/seis.jpg" alt=""></div>
+                    <div class="title">Cloud Service</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Contenedor principal  -->
+    <div id="main-container">
+        <div class="contenedor">
+
+            <div class="imagen">
+                <img src="img/logoSpaceDevs.png" alt="">
+            </div>
+            <h1>
+                5
+            </h1>
+            <h2>Otro titulo</h2>
+
+            <input type="button" value="Iniciar lanzamiento">
+
+            <p>Para mas info <a href="">hace click aqui</a></p>
+
+
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+    <script>
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        })
+
+    </script>
+
+</body>
+
+</html>
